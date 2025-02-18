@@ -1,0 +1,128 @@
+li[data-id] {
+  list-style: none;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  width: 300px;
+}
+
+li[data-id]:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+li[data-id] h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+li[data-id] p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.loadMore {
+  display: none;
+}
+
+li[data-id] img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#articles {
+  /* display: grid;
+    grid-template-columns: auto auto auto auto; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 38px;
+  padding: 40px;
+
+  justify-content: center;
+  /* justify-content: space-between; */
+}
+@media (min-width: 768px) {
+  #article {
+   padding: 0;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* background: url(../img/newspapers.jpg);
+   */
+   background: linear-gradient(#0000000f, rgba(0, 0, 0, 0.5)), 
+   url(../img/newspapers.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* height: 100vh; */
+  background-attachment: fixed; /* делает фон фиксированным при прокрутке */
+  min-height: 100vh; /* фон теперь растягивается вместе с контентом */
+  /* width: 100%;
+    margin: 10px; */
+}
+
+#search {
+  width: 70%;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #eefffe;
+  border-style: none;
+  padding-left: 20px;
+  font-size: 25px;
+  outline: none;
+}
+.news {
+  max-width: 1500px;
+/* 
+  display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+}
+
+#btn {
+  width: 90px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: rgba(18, 218, 18, 0.763);
+  border-style: none;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-content: flex-start;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.loadMore {
+  width: 90px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: rgba(18, 218, 18, 0.763);
+  border-style: none;
+  margin: 0 auto;
+}
+/* @media (min-width: 768px) {
+    .loadMore {
+      position: relative;
+      left: 40px;
+    }
+  } */
+
+i {
+    size: 30px;
+}
