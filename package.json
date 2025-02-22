@@ -2,16 +2,19 @@
   "name": "paginacion",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url /news/",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "handlebars": "^4.7.8",
     "parcel": "^2.13.3"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "parcel-transformer-handlebars": "^1.0.0",
     "parcel-transformer-hbs": "^1.0.4"
   }
